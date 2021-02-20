@@ -1,0 +1,66 @@
+@import '_base';
+
+// Try changing the colors below!
+// The gooey effect automatically adapts
+$bgColor: papayawhip;
+$buttonColor: dodgerblue;
+$buttonTextColor: white;
+
+body {
+ 
+  height: 100vh;
+  background: $bgColor;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  
+
+  &:focus {
+    outline: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+.fs-content-button{
+    position: fixed;
+    top: 25px;
+    right: 25px;
+}
+.mobile {
+    width: 300px;
+    height: 450px;
+    border: 1px solid #999;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  svg .menu {
+    stroke: #000;
+    stroke-width: 5;
+  }
+  h4 {
+    text-align: center;
+  }
+.fs-button{
+    border-radius: 50%;
+    background: $buttonColor;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    color: $buttonTextColor;
+    cursor: pointer;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg{
+        width: 24px;
+        height: 24px;
+    }
+}
